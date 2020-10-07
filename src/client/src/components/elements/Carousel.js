@@ -6,7 +6,7 @@ import '../../assets/css/parallax.css'
 
 let plugins = [new Parallax('img', 4)]
 
-const ParallaxDemo = () => (
+const Carousel = () => (
     <>
         <div id="parallax" className="plugins container">
             <Flicking
@@ -30,4 +30,4 @@ const ParallaxDemo = () => (
     </>
 )
 
-export default ParallaxDemo
+export default Carousel

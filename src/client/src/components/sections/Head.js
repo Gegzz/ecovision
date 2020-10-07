@@ -51,7 +51,7 @@ const Cta = ({
       className={outerClasses}
     >
       <div className="container">
-        <Carousel />
+     <Carousel />
       </div>
     </section>
   );

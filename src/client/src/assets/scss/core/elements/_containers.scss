@@ -12,6 +12,10 @@
 	}
 }
 
+.container-fluid {
+	max-width: unset;
+}
+
 .container {
 	max-width: $container--width + ( $container--padding__desktop * 2 );
 }

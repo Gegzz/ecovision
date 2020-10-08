@@ -1,33 +1,26 @@
-import React from 'react'
-import Flicking from '@egjs/react-flicking'
-import { Parallax } from '@egjs/flicking-plugins'
-import '../../assets/css/plugins.css'
-import '../../assets/css/parallax.css'
+import React from 'react';
+import Slider from 'react-animated-slider';
+import verticalCss from '../../assets/scss/react-animated-slider/vertical.scss';
+import content from '../../content';
+import '../../assets/css/test.css';
 
-let plugins = [new Parallax('img', 4)]
+function Vertical() {
+    return (
+        <Slider classNames={verticalCss} direction="vertical">
+            {content.map((item, index) => (
+                <div
+                    key={index}
+                    style={{ background: `url('${item.image}') no-repeat center center` }}
+                >
+                    <div className="center">
+                        <h1>{item.title}</h1>
+                        <p>{item.description}</p>
+                        <button className="carousel-button">{item.button}</button>
+                    </div>
+                </div>
+            ))}
+        </Slider>
+    );
+}
 
-const Carousel = () => (
-    <>
-        <div id="parallax" className="plugins container">
-            <Flicking
-                className="flicking"
-                gap={10}
-                circular={true}
-                plugins={plugins}
-                bound={true}
-            >
-                <div className="panel">
-                    <img src="https://naver.github.io/egjs-flicking/images/bg01.jpg" />
-                </div>
-                <div className="panel">
-                    <img src="https://naver.github.io/egjs-flicking/images/bg02.jpg" />
-                </div>
-                <div className="panel">
-                    <img src="https://naver.github.io/egjs-flicking/images/bg03.jpg" />
-                </div>
-            </Flicking>
-        </div>
-    </>
-)
-
-export default Carousel
+export default Vertical;

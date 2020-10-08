@@ -50,8 +50,8 @@ const Cta = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container">
-     <Carousel />
+      <div className="container-fluid">
+        <Carousel />
       </div>
     </section>
   );

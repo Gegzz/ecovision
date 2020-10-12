@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { } from 'react';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import { Section, Container } from 'react-bulma-components'
-import Navbar from './components/Navbar'
+import Navbar from './components/navbar/Navbar'
+import LogoCentered from './components/LogoCentered';
 
 export default () => (
   <>
-    <Section>
-
-    </Section>
+    <LogoCentered />
     <Section>
       <Container>
         <Navbar />

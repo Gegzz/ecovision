@@ -1,1 +1,0 @@
-web: cd src/public-web && npm install && npm start

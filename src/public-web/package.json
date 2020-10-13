@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-prebuild": "cd src/public-web"
+    "heroku-start": "cd src/public-web && npm start",
+    "heroku-build": "cd src/public-web && react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"

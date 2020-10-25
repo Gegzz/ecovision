@@ -2,7 +2,7 @@ import React from 'react'
 import { Section, Heading, Level, Card, Media, Box } from 'react-bulma-components'
 import { Left, Bottom, Kids, Kids2, Header } from '../../assets'
 import Tile from '../Tile'
-import Carousel, { } from 'react-elastic-carousel'
+import Carousel from 'react-elastic-carousel'
 import './styles.css'
 
 const pictures = [

@@ -1,18 +1,18 @@
 import React from 'react'
-import { Section, Box, Heading } from 'react-bulma-components'
+import { Section, Box, Heading, Image } from 'react-bulma-components'
 import { HeadingWithBackground, Space } from '..'
 import { ParallaxImage } from '../../assets'
 import Tile from '../Tile'
 
 const About = () => (
-    <Section style={{ backgroundImage: `url(${ParallaxImage})`, paddingVertical: 200 }}>
+    <Section style={{ backgroundImage: `url(${ParallaxImage})`, backgroundAttachment: 'fixed', paddingVertical: 200 }}>
         <Space />
         <Tile kind="ancestor">
             <Tile kind="parent" size={6}>
 
             </Tile>
-            <Tile kind="parent" size={6}>
-                <Box>
+            <Tile kind="parent" size={6} style={{ backgroundOpacity: 50 }}>
+                <Box style={{ backgroundColor: 'rgba(255,255,255,0.6)' }}>
                     <Heading spaced>ABOUT US</Heading>
                     <Heading subtitle>Soultaker is an American fantasy
                     horror film written by Vivian

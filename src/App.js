@@ -1,8 +1,10 @@
-import React, { } from 'react';
+import React from 'react';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
-import { Section, Container } from 'react-bulma-components'
+import { Section, Container, Box } from 'react-bulma-components'
 
-import { Navbar, LogoCentered, Header, Projects, Slider } from './components'
+import { Navbar, LogoCentered, Header, Projects, Slider, About, Space } from './components'
+
+const newSlider = true
 
 export default () => (
   <>
@@ -12,8 +14,19 @@ export default () => (
         <Navbar />
       </Container>
     </Section>
-    <Slider />
-    {/* <Header /> */}
+
+    {newSlider ? <Slider /> : <Header />}
+
+    <Space />
+
+    <Projects />
+    
+    <Space />
+    
+    <About />
+    
+    <Space />
+
     <Projects />
   </>
 )

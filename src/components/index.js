@@ -4,6 +4,8 @@ import Navbar from './navbar/Navbar'
 import Projects from './news/Projects'
 import Slider from './slider/Slider'
 import HeadingWithBackground from './HeadingWithBackground'
+import About from './about/About'
+import Space from './Space'
 
 export {
     Header,
@@ -11,5 +13,7 @@ export {
     Navbar,
     Projects,
     Slider,
-    HeadingWithBackground
+    HeadingWithBackground,
+    About,
+    Space,
 }

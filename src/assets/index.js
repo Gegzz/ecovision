@@ -5,6 +5,7 @@ import Left from './left.jpg'
 import Kids from './kids.png'
 import Kids2 from './kids2.jpg'
 import Bottom from './bottom.jpg'
+import ParallaxImage from './parallax.jpg'
 
 export {
     Logo,
@@ -14,4 +15,5 @@ export {
     Kids,
     Kids2,
     Bottom,
+    ParallaxImage
 }

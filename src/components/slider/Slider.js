@@ -1,10 +1,9 @@
 import React from 'react'
-import { Section, Container, Columns, Content, Hero, Heading, Level, Card, Media, Box } from 'react-bulma-components'
+import { Section, Heading, Level, Card, Media, Box } from 'react-bulma-components'
 import { Left, Bottom, Kids, Kids2, Header } from '../../assets'
 import Tile from '../Tile'
 import Carousel, { } from 'react-elastic-carousel'
 import './styles.css'
-import { HeadingWithBackground } from '..'
 
 const pictures = [
     {
@@ -35,9 +34,9 @@ const Slider = () => {
                         flexDirection: 'column',
                         justifyContent: 'space-between'
                     }}>
-                        <div className="content">
-                            <HeadingWithBackground >{pic.title}</HeadingWithBackground>
-                            <HeadingWithBackground subtitle>{pic.subtitle}</HeadingWithBackground>
+                        <div className="content" style={{ minWidth: '93vw', paddingTop: 92, paddingLeft: 32 }}>
+                            <Heading spaced>{pic.title}</Heading>
+                            <Heading style={{ fontWeight: 'normal', fontSize: '1.25rem' }} subtitle>{pic.subtitle}</Heading>
                         </div>
                     </Tile>
                 </Section>

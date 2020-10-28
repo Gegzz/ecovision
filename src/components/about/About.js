@@ -18,32 +18,49 @@ const About = () => (
                 <Tilt transitionSpeed={2000} tiltMaxAngleX={max} tiltMaxAngleY={max} tiltEnable={tiltEnabled}>
                     <Box style={{ backgroundColor: 'rgba(255,255,255,0.6)' }}>
                         <Heading spaced>ABOUT US</Heading>
-                        <Heading subtitle>Soultaker is an American fantasy
-                        horror film written by Vivian
-                        Schilling and directed by Michael
-                        Rissi, released on October 26,
-                        1990. It stars Joe Estevez in the
-                        title role, alongside Schilling,
-                        Gregg Thomsen, Chuck Williams,
-                        Robert Z'Dar, and David "Shark"
-                        Fralick.
+                        <Heading subtitle>Union for Sustainable
+                        Development - ECOVISION was established
+                        in 2001. One of the basic directions of
+                        the union is to raise public environmental
+                        awareness. ECOVISION has accomplished more
+                        than 50 projects, funded by international
+                        donor organizations.
                     </Heading>
-                        <Heading subtitle>
-                            The film follows a group
-                            of young adults who try to flee from
-                            the Soultaker when their souls are
-                            ejected from their bodies after a car
-                            accident.
+                    </Box>
+                    <Box style={{ backgroundColor: 'rgba(255,255,255,0.6)' }}>
+                        <Heading spaced>Vision</Heading>
+                        <Heading subtitle>To be a leading non-governmental
+                        organization in the field of Environmental Protection and
+                        Sustainable Development in Georgia, which has high trust and
+                        recognition, both locally and internationally.
                     </Heading>
-                        <Heading subtitle>Philosophy has almost
-                        as many definitions as there have been
-                        philosophers, both as a subject matter
-                        and an activity, and no simple definition
-                        can do it justice. The issue of the
-                        definition of philosophy is thus a
-                        controversial subject that is nowadays
-                        tackled by Metaphilosophy (or the philosophy
-                        of philosophy).
+                    </Box>
+                    <Box style={{ backgroundColor: 'rgba(255,255,255,0.6)' }}>
+                        <Heading spaced>Mission</Heading>
+                        <Heading subtitle>to support the establishment of the
+                        long-term vision and mentality, to implement the policy
+                        of efficient use of natural resources and therefore to
+                        reduce the negative impact of humans on nature.
+                        <br />
+                        <br />
+                        To expand sustainable knowledge, skills, and mindset
+                        that motivates individuals to become deeply committed
+                        to build a sustainable future and to make informed and
+                        effective decisions.
+                    </Heading>
+                    </Box>
+                    <Box style={{ backgroundColor: 'rgba(255,255,255,0.6)' }}>
+                        <Heading spaced>Goals</Heading>
+                        <Heading subtitle>to support the establishment of the
+                        long-term vision and mentality, to implement the policy
+                        of efficient use of natural resources and therefore to
+                        reduce the negative impact of humans on nature.
+                        <br />
+                        <br />
+                        To expand sustainable knowledge, skills, and mindset
+                        that motivates individuals to become deeply committed
+                        to build a sustainable future and to make informed and
+                        effective decisions.
                     </Heading>
                     </Box>
                 </Tilt>

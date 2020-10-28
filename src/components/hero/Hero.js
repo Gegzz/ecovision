@@ -1,6 +1,7 @@
 import React from 'react'
 import { Heading, Section } from 'react-bulma-components'
 import { Tile } from '..'
+import Space from '../Space'
 
 const Hero = () => (
     <Section>
@@ -18,6 +19,7 @@ const Hero = () => (
             <Tile><Heading size={5} subtitle>"It is our collective and individual responsibility to preserve and tend to the environment in which we all live."</Heading></Tile>
             <Tile></Tile>
         </Tile>
+        <Space />
     </Section>
 )
 

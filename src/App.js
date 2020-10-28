@@ -4,7 +4,7 @@ import { Section, Container, Box, Heading } from 'react-bulma-components'
 
 import { Navbar, LogoCentered, Header, Projects, Slider, About, Space, HeadingWithBackground, Footer, Hero } from './components'
 
-const newSlider = true
+const newSlider = false
 
 export default () => (
   <>
@@ -17,7 +17,7 @@ export default () => (
 
     <Hero />
 
-    {/* {newSlider ? <Slider /> : <Header />} */}
+    {newSlider ? <Slider /> : <Header />}
 
     {/* <Section style={{ textAlign: 'center' }}>
       <Heading>Union for sustainable development</Heading>

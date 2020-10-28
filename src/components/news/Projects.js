@@ -1,11 +1,16 @@
 import React from 'react'
-import { Section, Box } from 'react-bulma-components'
+import { Section, Box, Heading } from 'react-bulma-components'
 import { HeadingWithBackground } from '..'
 import { Left, Bottom, Kids, Kids2 } from '../../assets'
+import Space from '../Space'
 import Tile from '../Tile'
 
-const Projects = () => (
+const Projects = (title) => (
     <Section>
+        {/* <Space /> */}
+        <Space>
+            <Heading style={{ textAlign: 'center' }} size={2} weight="normal">Our Highlights</Heading>
+        </Space>
         <Tile kind="ancestor">
             <Tile kind="parent" size={6}>
                 <Tile renderAs="article" kind="child" notification background={Left}>

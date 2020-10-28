@@ -11,6 +11,7 @@
     "react-bulma-components": "^3.4.0",
     "react-dom": "^16.13.1",
     "react-elastic-carousel": "^0.9.1",
+    "react-items-carousel": "^2.8.0",
     "react-parallax-tilt": "^1.4.66",
     "react-scripts": "3.4.3",
     "react-scroll-parallax": "^2.3.4",

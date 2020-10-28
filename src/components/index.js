@@ -6,6 +6,9 @@ import Slider from './slider/Slider'
 import HeadingWithBackground from './HeadingWithBackground'
 import About from './about/About'
 import Space from './Space'
+import Footer from './footer/Footer'
+import Hero from './hero/Hero'
+import Tile from './Tile'
 
 export {
     Header,
@@ -16,4 +19,7 @@ export {
     HeadingWithBackground,
     About,
     Space,
+    Footer,
+    Hero,
+    Tile
 }

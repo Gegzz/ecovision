@@ -14,11 +14,11 @@ const NavigationBar = () => {
         >
             <Navbar.Menu style={{ justifyContent: 'center', width: '100%' }}>
                 <NavbarItem text="Home" />
-                <NavbarItem text="Category" />
-                <NavbarItem text="Features" />
-                <NavbarItem text="Blog" />
-                <NavbarItem text="Contact" />
                 <NavbarItem text="About" />
+                <NavbarItem text="Projects" />
+                <NavbarItem text="News" />
+                <NavbarItem text="Media" />
+                <NavbarItem text="Contact" />
             </Navbar.Menu>
         </Navbar>
     )

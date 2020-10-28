@@ -11,6 +11,7 @@ const NavigationBar = () => {
             active={active}
             transparent={true}
             onClick={() => setActive(!active)}
+            style={{ background: 'transparent' }}
         >
             <Navbar.Menu style={{ justifyContent: 'center', width: '100%' }}>
                 <NavbarItem text="Home" />

@@ -25,7 +25,7 @@ const About = () => (
                         awareness. ECOVISION has accomplished more
                         than 50 projects, funded by international
                         donor organizations.
-                    </Heading>
+                        </Heading>
                     </Box>
                     <Box style={{ backgroundColor: 'rgba(255,255,255,0.6)' }}>
                         <Heading spaced>Vision</Heading>
@@ -42,7 +42,7 @@ const About = () => (
                         of efficient use of natural resources and therefore to
                         reduce the negative impact of humans on nature.
                         <br />
-                        <br />
+                            <br />
                         To expand sustainable knowledge, skills, and mindset
                         that motivates individuals to become deeply committed
                         to build a sustainable future and to make informed and
@@ -56,7 +56,7 @@ const About = () => (
                         of efficient use of natural resources and therefore to
                         reduce the negative impact of humans on nature.
                         <br />
-                        <br />
+                            <br />
                         To expand sustainable knowledge, skills, and mindset
                         that motivates individuals to become deeply committed
                         to build a sustainable future and to make informed and

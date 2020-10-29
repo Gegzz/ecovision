@@ -29,7 +29,7 @@ const Slider = () => {
             {pictures.map(pic => (
                 <Section style={{ paddingHorizontal: '24px', outline: 0 }}>
                     <Tile kind="ancestor" notification background={Header} style={{
-                        minHeight: 512,
+                        minHeight: 640,
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'space-between'

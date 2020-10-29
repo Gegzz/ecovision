@@ -4,11 +4,12 @@ import { Section, Container, Box, Heading } from 'react-bulma-components'
 
 import { Navbar, LogoCentered, Header, Projects, Slider, About, Space, HeadingWithBackground, Footer, Hero, Subscribe } from './components'
 
-const newSlider = false
+const newSlider = true
 
 export default () => (
   <>
     <LogoCentered />
+    <Heading style={{ textAlign: 'center', padding: 0, marginBottom: -36 }} size={6} subtitle>Union for sustainable development</Heading>
     <Section>
       <Container>
         <Navbar />
@@ -18,10 +19,6 @@ export default () => (
     <Hero />
 
     {newSlider ? <Slider /> : <Header />}
-
-    {/* <Section style={{ textAlign: 'center' }}>
-      <Heading>Union for sustainable development</Heading>
-    </Section> */}
 
     {/* <Space /> */}
 

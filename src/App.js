@@ -16,7 +16,7 @@ export default () => (
       </Container>
     </Section>
 
-    <Hero />
+    {/* <Hero /> */}
 
     {newSlider ? <Slider /> : <Header />}
 

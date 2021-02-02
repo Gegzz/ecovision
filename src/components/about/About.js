@@ -29,7 +29,16 @@ const aboutData = [
     picture:
       'https://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2021/02/viruses/viruses-embryo-og.adapt.1190.1.jpg'
   }
-]
+].reduce((result, value, index, array) => {
+  if (index % 2 === 0) result.push(array.slice(index, index + 2))
+  return result
+}, [])
+
+const headData = {
+  title: 'See how viruses look up close',
+  picture:
+    'https://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2021/02/viruses/see-how-viruses-look-up-close-og.adapt.536.1.jpg'
+}
 
 const NewsItem = ({ title, description, picture }) => (
   <Box
@@ -78,34 +87,37 @@ const About = () => (
           flexDirection: 'column'
         }}>
         {/* <Tilt transitionSpeed={2000} tiltMaxAngleX={max} tiltMaxAngleY={max} tiltEnable={tiltEnabled}> */}
-        {[aboutData[0]].map((data, index) => (
           <NewsItem
-            key={index}
-            title={data.title}
-            description={data.description}
-            picture={data.picture}
+            title={headData.title}
+            description={headData.description}
+            picture={headData.picture}
           />
-        ))}
         {/* </Tilt> */}
       </Tile>
     </Tile>
-    <Tile kind="ancestor" size={8}>
-      {aboutData
-        .reduce(function (result, value, index, array) {
-          if (index % 2 === 0) result.push(array.slice(index, index + 2))
-          return result
-        }, [])
-        .map((data, index) => (
-          <Tile kind="parent" size={6}>
+    {aboutData.map((data, index) => (
+      <>
+        <Tile kind="ancestor">
+          <Tile kind="parent" size={2}></Tile>
+          <Tile kind="parent" size={4}>
             <NewsItem
               key={index}
-              title={data.title}
-              description={data.description}
-              picture={data.picture}
+              title={data[0].title}
+              description={data[0].description}
+              picture={data[0].picture}
             />
           </Tile>
-        ))}
-    </Tile>
+          <Tile kind="parent" size={4}>
+            <NewsItem
+              key={index}
+              title={data[1].title}
+              description={data[1].description}
+              picture={data[1].picture}
+            />
+          </Tile>
+        </Tile>
+      </>
+    ))}
     <Space />
   </Section>
 )

@@ -27,7 +27,7 @@ const Slider = () => {
     return (
         <Carousel showArrows={false} pagination={false} itemsToShow={1} focusOnSelect={false} enableAutoPlay >
             {pictures.map(pic => (
-                <Section style={{ paddingHorizontal: '24px', outline: 0 }}>
+                <Section style={{ paddingHorizontal: '24px', outline: 0 }} marginless paddingless>
                     <Tile kind="ancestor" notification background={Header} style={{
                         minHeight: 640,
                         display: 'flex',

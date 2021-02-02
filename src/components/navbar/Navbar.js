@@ -1,28 +1,32 @@
 import React from 'react'
-import { Navbar, Icon } from 'react-bulma-components'
-import '@fortawesome/fontawesome-free/css/all.css'
+import { Level } from 'react-bulma-components'
+import { Logo } from '../../assets'
 import NavbarItem from './NavbarItem'
 
-const NavigationBar = () => {
-    const [active, setActive] = React.useState(false)
+const Navbar2 = () => (
+  <Level renderAs="nav" style={{ background: 'transparent', paddingTop: 16, paddingBottom: 24 }}>
+    <Level.Item textAlignment="centered">
+      <NavbarItem text="Home" />
+    </Level.Item>
+    <Level.Item textAlignment="centered">
+      <NavbarItem text="Projects" />
+    </Level.Item>
+    <Level.Item textAlignment="centered">
+      <NavbarItem text="News" />
+    </Level.Item>
+    <Level.Item textAlignment="centered">
+      <img src={Logo} alt="bulma-logo" style={{ height: 64 }} />
+    </Level.Item>
+    <Level.Item textAlignment="centered">
+      <NavbarItem text="Media" />
+    </Level.Item>
+    <Level.Item textAlignment="centered">
+      <NavbarItem text="About" />
+    </Level.Item>
+    <Level.Item textAlignment="centered">
+      <NavbarItem text="Contact" />
+    </Level.Item>
+  </Level>
+)
 
-    return (
-        <Navbar
-            active={active}
-            transparent={true}
-            onClick={() => setActive(!active)}
-            style={{ background: 'transparent' }}
-        >
-            <Navbar.Menu style={{ justifyContent: 'center', width: '100%' }}>
-                <NavbarItem text="Home" />
-                <NavbarItem text="About" />
-                <NavbarItem text="Projects" />
-                <NavbarItem text="News" />
-                <NavbarItem text="Media" />
-                <NavbarItem text="Contact" />
-            </Navbar.Menu>
-        </Navbar>
-    )
-}
-
-export default NavigationBar
+export default Navbar2

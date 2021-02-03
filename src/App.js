@@ -1,22 +1,23 @@
 import React from 'react'
-import { Section, Container, Box, Heading } from 'react-bulma-components'
+import { Section } from 'react-bulma-components'
 
 import {
   Header,
   Projects,
   Slider,
-  About,
   Space,
+  News,
+  About,
   Footer,
+  Navbar
 } from './components'
-import Navbar2 from './components/navbar/Navbar'
 
 const newSlider = true
 
 export default () => (
   <>
     <Section paddingless marginless>
-      <Navbar2 />
+      <Navbar />
     </Section>
 
     {/* <Hero /> */}
@@ -28,6 +29,8 @@ export default () => (
     <Projects />
 
     <Space />
+
+    <News />
 
     <About />
 

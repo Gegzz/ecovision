@@ -11,12 +11,10 @@ import Space from '../Space'
 const {  Input } = Form
 
 const Footer = () => (
-  <BulmaFooter marginless style={{ backgroundColor: '#e3e6da' }}>
+  <BulmaFooter marginless style={{ backgroundColor: 'transparent' }}>
     <Container>
-      <div
-        style={{ maxWidth: 650, textAlign: 'center', margin: 'auto' }}
-        class="has-text-centered max-w-650 mx-auto">
-        <Heading size={2} style={{ fontWeight: 900 }}>
+      <div style={{ maxWidth: 650, textAlign: 'center', margin: 'auto' }}>
+        <Heading size={2} weight='bold'>
           Stay in the know
         </Heading>
         <p class="has-text is-size-5">

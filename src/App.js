@@ -9,7 +9,8 @@ import {
   News,
   About,
   Footer,
-  Navbar
+  Navbar,
+  Partners
 } from './components'
 
 const newSlider = true
@@ -33,6 +34,8 @@ export default () => (
     <News />
 
     <About />
+
+    <Partners />
 
     <Footer />
   </>

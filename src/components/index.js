@@ -10,6 +10,7 @@ import Space from './Space'
 import Footer from './footer/Footer'
 import Hero from './hero/Hero'
 import Tile from './Tile'
+import Partners from './partners/Partners'
 
 export {
     Header,
@@ -23,5 +24,6 @@ export {
     About,
     Footer,
     Hero,
-    Tile
+    Tile,
+    Partners,
 }
